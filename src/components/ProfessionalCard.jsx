@@ -7,7 +7,7 @@ const ProfessionalCard = () => {
   const address = { country: '🇵🇪 Perú 🇵🇪', city: 'Lima' };
 
   return (
-    <div>
+    <div className="card">
       <h2>♥️ {name} <sup>{age}</sup> <sub>{isAlive ? '🟢' : '🔴'}</sub>♥️</h2>
       <h3>{address.country}, {address.city}</h3>
       <h4>{roles.join(' I ')}</h4>
