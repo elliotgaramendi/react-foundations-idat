@@ -1,24 +1,17 @@
 const ProfessionalCard = () => {
   const name = 'Elliot Garamendi';
   const age = 29;
+  const isAlive = true;
   const roles = ['🌌Frontend🌌', '🤖AI Engineer🤖', '💻Consultor💻', '👨‍🏫Docente👨‍🏫']
-  const description = 'Desarrollador Frontend (Web/Mobile) experto en React. Creo productos AI centrados en el usuario. Amo investigar, aprender y compartir código de calidad.';
   const skills = ['⚛️ React ⚛️', '🌐 Next.js 🌐', '🚀 Astro 🚀', '🤖 OpenAI 🤖', '🐳 Docker 🐳', '🎨 UI/UX 🎨', '🖌️ Figma 🖌️', '🧪 Testing 🧪'];
-  const socialNetworks = [
-    { name: 'YouTube', url: 'https://www.youtube.com/@elliotgaramendi' },
-    { name: 'GitHub', url: 'https://github.com/elliotgaramendi' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/elliotgaramendi/' },
-    { name: 'Instagram', url: 'https://www.instagram.com/elliotgaramendi/' },
-  ];
+  const address = { country: '🇵🇪 Perú 🇵🇪', city: 'Lima' };
 
   return (
     <div>
-      <h2>{name}</h2>
-      <h3>{age}</h3>
-      <h4>{roles}</h4>
-      <p>{description}</p>
-      <h5>{skills}</h5>
-      <h6>{JSON.stringify(socialNetworks)}</h6>
+      <h2>♥️ {name} <sup>{age}</sup> <sub>{isAlive ? '🟢' : '🔴'}</sub>♥️</h2>
+      <h3>{address.country}, {address.city}</h3>
+      <h4>{roles.join(' I ')}</h4>
+      <h5>{skills.join(', ')}</h5>
     </div>
   );
 };
