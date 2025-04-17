@@ -16,8 +16,8 @@ function App() {
     name: 'Mijael Garamendi',
     age: 2,
     isAlive: true,
-    roles: ['🌌Frontend🌌', '🤖AI Engineer🤖', '👨‍🏫Docente👨‍🏫'],
-    skills: ['⚛️ React ⚛️', '🚀 Astro 🚀', '🖌️ Figma 🖌️', '🤖 OpenAI 🤖'],
+    roles: ['🌌BB🌌', '🤖Plim Plim🤖'],
+    skills: ['⚛️ Reír ⚛️', '🚀 Abrazar 🚀', '🖌️ Amar 🖌️'],
     address: { country: '🇵🇪 Perú 🇵🇪', city: 'Lima' },
   };
 
@@ -27,8 +27,22 @@ function App() {
         <img src={reactLogo} className="logo react" alt="React logo" />
       </a>
       <h1>React Foundation</h1>
-      <ProfessionalCard name={person1.name} age={person1.age} isAlive={person1.isAlive} />
-      <ProfessionalCard name={person2.name} age={person2.age} isAlive={person2.isAlive} />
+      <ProfessionalCard
+        name={person1.name}
+        age={person1.age}
+        isAlive={person1.isAlive}
+        roles={person1.roles}
+        skills={person1.skills}
+        address={person1.address}
+      />
+      <ProfessionalCard
+        name={person2.name}
+        age={person2.age}
+        isAlive={person2.isAlive}
+        roles={person2.roles}
+        skills={person2.skills}
+        address={person2.address}
+      />
     </>
   )
 }

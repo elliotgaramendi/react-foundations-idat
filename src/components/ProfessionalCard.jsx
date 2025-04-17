@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const ProfessionalCard = ({ name, age, isAlive }) => {
+const ProfessionalCard = ({ name, age, isAlive, roles, skills, address }) => {
   console.log(name);
   const [like, setLike] = useState(0);
   const handleLike = () => setLike(like + 1);
@@ -8,10 +8,9 @@ const ProfessionalCard = ({ name, age, isAlive }) => {
   return (
     <div className="card">
       <h2>♥️ {name} <sup>{age}</sup> <sub>{isAlive ? '🟢' : '🔴'}</sub>♥️</h2>
-      {/* 
       <h3>{address.country}, {address.city}</h3>
       <h4>{roles.join(' I ')}</h4>
-      <h5>{skills.join(', ')}</h5> */}
+      <h5>{skills.join(', ')}</h5>
       <button onClick={handleLike}>Like ❤️ {like}</button>
     </div>
   );
